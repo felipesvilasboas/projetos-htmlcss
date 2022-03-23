@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: glacial-regular;
+    src: url("../fonts/GlacialIndifference-Regular.otf");
+}
+
+:root {
+    --cor01: #FFE3DE;
+    --cor02: #8D77AB;
+    --cor03: #13262F;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+header {
+    font-family: "glacial-regular", sans-serif;
+    font-variant: small-caps;
+    background-color: var(--cor02);
+    color: var(--cor03);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.445);
+}
+
+header > h1 {
+    font-size: 10vw;
+}
+
+nav {
+    color: white;
+    background-color: var(--cor03);
+    margin: auto;
+    width: 55px;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav > a:hover {
+    color: var(--cor03);
+}
+
+nav:hover {
+    background-color: var(--cor01);
+}
+
+main {
+    padding-top: 10px;
+    font-size: 3.5vw;
+}
+
+section {
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 1.3em;
+    background-color: var(--cor02);
+    color: white;
+    width: 50vh;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px black;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+}
+
+article#image {
+    background-image: url('../image/imagemrosa.jpg');
+    background-size: cover;
+    height: 40vh;
+    box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.267);
+    background-attachment: fixed;
+    margin: -5px;
+}
+
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cor02);
+    color: white;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.445);
+    padding: 8px;
+}
+
+@media screen and (min-width: 620px) {
+    body {
+        background-color: #ffbdb1;
+    }
+
+    section {
+        font-size: 2vw;
+        width: 90vh;
+    } 
+
+    header > h1 {
+        font-size: 3.8em;
+    }
+
+    nav {
+        margin: 10px;
+    }
+}
