@@ -1,2 +1,2 @@
 # projetos-htmlcss
- Projetos criado com HTML5 + CSS3
+ Projects made with HTML5 + CSS3
