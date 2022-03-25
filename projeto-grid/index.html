@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Grid</title>
+
+    <style>
+        .item1 {
+            grid-area: um;
+        }
+
+        .grid-container {
+        display: grid;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        grid-template-areas: 'um . . . . . . .';
+        }
+
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+
+        .itemum {
+            grid-area: azul;
+        }
+
+        .grid-container2 {
+        display: grid;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        grid-template-areas: 'azul azul';
+        }
+
+        .grid-container2 > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+
+
+        .itema { grid-area: one; }
+        .itemb { grid-area: two; }
+        .itemc { grid-area: three; }
+
+        .grid-container3 {
+        display: grid;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        grid-template-areas: 
+        'one one'
+        'two three';
+        }
+
+        .grid-container3 > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <main>
+        <section class="grid-container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+        </section>
+
+        <br>
+
+        <section class="grid-container2">
+            <div class="itemum">1</div>
+            <div class="itemdois">2</div>
+            <div class="itemtres">3</div>
+        </section>
+
+        <br>
+
+        <section class="grid-container3">
+            <div class="itema">One</div>
+            <div class="itemb">Two</div>
+            <div class="itemc">Three</div>
+        </section>
+    </main>
+</body>
+</html>
