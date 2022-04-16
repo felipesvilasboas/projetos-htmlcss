@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url('../images/france.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font: 1.2em arial;
+    color: #012D5E;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.238);
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 6%;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.165);
+}
+
+.container h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.inputname {
+    position: relative;
+    padding-top: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.inputname input {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 5px;
+    border: 0;
+    border-bottom: 2px solid #1c5e82;
+    background-color: transparent;
+    outline: none;
+    transition: all .3s ease-out;
+}
+
+.inputname input:focus {
+    border-bottom: 2px solid black;
+}
+
+.inputname label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    transition: all .3s ease-out;
+}
+
+.inputname input:focus + label,
+.inputname input:valid + label {
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+hr {
+    width: 30%;
+    margin: 30px auto;
+}
+
+.container p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 7px;
+    background-color: transparent;
+    border-color: #1c5e82;
+    cursor: pointer;
+    outline: none;
+    margin-top: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #1c5e82;
+    color: white;
+    transition: all .4s ease-out;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #399EC2;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.06);
+}
+
+.emoji {
+    position: absolute;
+    top: 07px;
+    right: 7px;
+    cursor: pointer;
+}
