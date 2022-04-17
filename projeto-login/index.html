@@ -11,17 +11,18 @@
     <main>
         <section class="container">
             <h1>Entrar</h1>
+            <div id="mensagem"></div>
             <div class="inputname">
                 <input type="text" name="user" id="user" required>
-                <label for="usuario">Usuário</label>
+                <label id="userLabel" for="usuario">Usuário</label>
             </div>
             <div class="inputname">
                 <input type="password" name="password" id="password" required>
-                <label for="password">Senha</label>
+                <label id="passwordLabel" for="password">Senha</label>
                 <p class="emoji" onclick="clickEmoji()">&#128064;</p>
             </div>
             <aside>
-                <button onclick="button()">Entrar</button>
+                <button onclick="entrar()">Entrar</button>
             </aside>
             <div><hr></div>
             <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>

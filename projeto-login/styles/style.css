@@ -113,3 +113,10 @@ a {
     right: 7px;
     cursor: pointer;
 }
+
+#mensagem {
+    text-align: center;
+    background-color: green;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.202);
+}
