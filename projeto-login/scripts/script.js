@@ -131,6 +131,8 @@ function entrar() {
         let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
         localStorage.setItem('token', token)
 
+        localStorage.setItem('userLogado', JSON.stringify(userValide))
+
         setTimeout(()=> {
             window.location.href = './logado.html'
         }, 2000)
